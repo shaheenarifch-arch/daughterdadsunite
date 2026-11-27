@@ -65,7 +65,7 @@ nav a[aria-current=page],nav a:hover{border-color:var(--plum)}
 .pcard:hover .pcard-img img{transform:scale(1.04)}
 .tag{position:absolute;top:14px;left:14px;background:var(--ink);color:#fff;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 10px}
 .pcard-body{padding:16px 2px}
-.cause-label{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--plum);font-weight:600;margin:0}
+.cause-label{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--plum);font-weight:600;margin:0}
 .price{font-weight:600;color:var(--ink2);margin:.2em 0}
 .price.big{font-size:1.5rem;font-family:var(--serif)}
 .price-note{display:block;font:500 .85rem var(--sans);color:var(--muted)}
@@ -121,7 +121,7 @@ summary{font-weight:600;cursor:pointer;letter-spacing:.06em;text-transform:upper
 .coming-list li{border:1px solid var(--line);background:#fff;padding:8px 14px;font-size:.85rem}
 .drop-card{border:1px solid var(--ink);padding:32px;margin:28px 0}
 .muted-card{border-color:var(--line);background:var(--cream)}
-.status{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--muted);margin:0}
+.status{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--muted);margin:0}
 .status.live{color:var(--wine)}
 .countdown{font-family:var(--serif);font-size:1.5rem;color:var(--wine)}
 .receipts{width:100%;border-collapse:collapse;margin:14px 0;font-size:.95rem}
@@ -164,3 +164,5 @@ code{background:var(--cream);padding:1px 5px;font-size:.85em}
 .contact li{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
 .contact span{min-width:64px;font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--plum)}
 .contact a{color:var(--ink);word-break:break-word;padding:4px 0}
+@media(max-width:420px){.footer-grid{grid-template-columns:1fr;gap:24px}}
+.site-footer a{overflow-wrap:anywhere}
