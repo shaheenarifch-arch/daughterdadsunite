@@ -166,3 +166,7 @@ code{background:var(--cream);padding:1px 5px;font-size:.85em}
 .contact a{color:var(--ink);word-break:break-word;padding:4px 0}
 @media(max-width:420px){.footer-grid{grid-template-columns:1fr;gap:24px}}
 .site-footer a{overflow-wrap:anywhere}
+.powered{padding-top:18px}
+.site-footer a.gs-badge{display:inline-flex;align-items:center;gap:10px;margin:0;padding:9px 18px;border:1.5px solid #5b8def;border-radius:10px;color:#8fb4ff;font-weight:600;font-size:.92rem;text-decoration:none;line-height:1;transition:background .2s,color .2s,border-color .2s}
+.site-footer a.gs-badge:hover,.site-footer a.gs-badge:focus-visible{background:rgba(91,141,239,.14);color:#fff;border-color:#8fb4ff}
+.gs-badge-icon{flex:none}
