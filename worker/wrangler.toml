@@ -1,0 +1,25 @@
+# Daughter Dads Unite checkout API: Stripe Checkout -> Printful order.
+# Deployed by Cloudflare Workers Builds from this repo (root directory: worker).
+name = "ddu-api"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+workers_dev = true
+routes = [{ pattern = "api.daughterdadsunite.org", custom_domain = true }]
+
+[vars]
+SITE_URL = "https://daughterdadsunite.org"
+ALLOWED_ORIGINS = "https://daughterdadsunite.org,https://www.daughterdadsunite.org"
+# Flat US shipping charged at checkout, in cents.
+SHIPPING_CENTS = "599"
+# "false" = Printful orders are created as drafts you confirm in Printful.
+# Change to "true" once a test order has gone through end to end.
+PRINTFUL_CONFIRM = "false"
+# Map site product slugs to Printful sync product IDs (from your Printful API store).
+# A product with id 0 is "not set up yet" and the site shows the Amazon button instead.
+PRODUCTS = '{"jane-doe-tee":{"sync_product_id":0},"jane-doe-cap":{"sync_product_id":0}}'
+
+# Secrets (set in Cloudflare dashboard > Workers > ddu-api > Settings > Variables and Secrets, type "Secret"):
+#   PRINTFUL_TOKEN         Printful private API token
+#   PRINTFUL_STORE_ID      Printful store ID of the "Manual order / API" store
+#   STRIPE_SECRET_KEY      Stripe secret key (sk_live_... or sk_test_...)
+#   STRIPE_WEBHOOK_SECRET  Stripe webhook signing secret (whsec_...)
