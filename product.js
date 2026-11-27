@@ -60,7 +60,7 @@
     images.slice(0, 6).forEach(function (src, i) {
       var b = el('button', { type: 'button' });
       b.setAttribute('aria-label', 'Show image ' + (i + 1));
-      b.appendChild(el('img', { src: src, alt: '', loading: 'lazy' }));
+      b.appendChild(el('img', { src: src, alt: '', loading: 'lazy', decoding: 'async', width: 120, height: 120 }));
       b.onclick = function () { main.src = src; };
       box.appendChild(b);
     });
