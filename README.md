@@ -2,6 +2,18 @@
 
 Website for [daughterdadsunite.org](https://daughterdadsunite.org): premium cause apparel, 50% of profits to RAINN.
 
+## Under construction mode (since Nov 27, 2026)
+Every page (home, shop, product pages, info pages and the 404 page) currently shows one
+"Under construction" holding page. Nothing else was deleted: images, styles, fonts, scripts,
+the checkout API in `worker/` and the Google verification file are unchanged.
+
+To bring the full site back, either:
+1. On GitHub, open the pull request "Put the site under construction" and press **Revert**, then merge the revert PR; or
+2. Restore the pages from the `full-site-backup` branch, which holds the full site exactly as it was:
+   `git checkout full-site-backup -- *.html README.md` then commit and push to `main`.
+
+GitHub Pages republishes within a few minutes.
+
 ## How it fits together
 - **Site** (repo root): static HTML/CSS on GitHub Pages, DNS on Cloudflare.
 - **Checkout API** (`worker/`): a Cloudflare Worker at `api.daughterdadsunite.org`.
