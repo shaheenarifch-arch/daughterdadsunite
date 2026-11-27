@@ -47,7 +47,7 @@ nav a[aria-current=page],nav a:hover{border-color:var(--plum)}
 .text-link{font-weight:600;letter-spacing:.06em;text-decoration:none;text-transform:uppercase;font-size:.85rem}
 .hero{position:relative;min-height:86vh;display:flex;align-items:center;color:#fff;overflow:hidden;background:var(--ink)}
 .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85;object-position:72% center}
-@media(min-width:900px){.hero-img{left:auto;right:0;width:64%;object-position:center 30%;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 30%);mask-image:linear-gradient(90deg,transparent 0,#000 30%)}.hero:after{background:linear-gradient(90deg,rgba(18,16,20,.9) 0%,rgba(18,16,20,.5) 40%,rgba(18,16,20,0) 70%)}}
+@media(min-width:900px){.hero-img{left:auto;right:0;width:64%;object-position:6% 30%;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 30%);mask-image:linear-gradient(90deg,transparent 0,#000 30%)}.hero:after{background:linear-gradient(90deg,rgba(18,16,20,.9) 0%,rgba(18,16,20,.5) 40%,rgba(18,16,20,0) 70%)}}
 .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,16,20,.88) 0%,rgba(18,16,20,.55) 50%,rgba(18,16,20,.1) 100%)}
 .hero-text{position:relative;z-index:1;max-width:640px;padding:80px 24px;margin-left:max(24px,calc((100vw - 1200px)/2))}
 .hero h1{color:#fff;font-size:clamp(2.8rem,6.5vw,5rem)}
