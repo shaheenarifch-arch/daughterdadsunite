@@ -133,3 +133,10 @@ summary{font-weight:600;cursor:pointer;letter-spacing:.06em;text-transform:upper
 .foot-h{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#fff;font-weight:600}
 .copy{margin-top:40px;border-top:1px solid #2e2a33;padding-top:20px}
 code{background:var(--cream);padding:1px 5px;font-size:.85em}
+.team{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media(max-width:850px){.team{grid-template-columns:1fr}}
+.person{display:flex;gap:24px;align-items:flex-start;border-top:2px solid var(--ink);padding-top:24px}
+.person img{width:140px;height:140px;border-radius:50%;object-fit:cover;flex:none}
+.person h3{margin:0}
+.role{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--plum);font-weight:600;margin:.4em 0 .8em}
+@media(max-width:500px){.person{flex-direction:column}}
